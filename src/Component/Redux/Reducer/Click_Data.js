@@ -1,14 +1,14 @@
-var initialState={
-    data:[]
+var initialState = {
+    data: []
 };
-const ClickData=(state=initialState,action)=>{
+const ClickData = (state = initialState, action) => {
     switch (action.type) {
-        case 'CLICK_DATA': 
-            return{
-                data:action.data,
+        case 'CLICK_DATA':
+            return {
+                data: action.data,
             }
-        default:return state
-            
+        default: return state
+
     }
 }
 export default ClickData;
